@@ -1,0 +1,46 @@
+public class CreditCard
+{
+  public boolean verify(String num)
+  {
+    for (int i = num.length() - 1; i >= 0; i -=2)
+    {
+    }
+    
+    for (int i = num.length() - 2; i >= 0; i -=2)
+    {
+    }
+  }
+  
+  public int findType(String num)
+  {
+    if (num.substring(0,2).equals(51)||num.substring(0,2).equals(52)||num.substring(0,2).equals(53)||num.substring(0,2).equals(54)||num.substring(0,2).equals(55))
+    {
+      return 1;
+    }
+    
+    if (num.substring(0,1).equals(4))
+    {
+      return 2;
+    }
+    
+    if (num.substring(0,2).equals(34)||num.substring(0,2).equals(37))
+    {
+      return 3;
+    }
+    
+    if (num.substring(0,4).equals(6011))
+    {
+      return 4;
+    }
+    
+    if (num.substring(0,3).equals(300)||num.substring(0,3).equals(301)||num.substring(0,3).equals(302)||num.substring(0,3).equals(303)||num.substring(0,3).equals(304)||num.substring(0,3).equals(305))
+    {
+      return 5;
+    }
+    
+    else if (num.substring(0,2).equals(36)||num.substring(0,2).equals(38))
+    {
+      return 5;
+    }
+  }
+}
